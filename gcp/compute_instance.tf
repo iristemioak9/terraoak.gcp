@@ -119,6 +119,7 @@ resource "google_compute_instance_iam_binding" "instance_binding" {
   members = ["allUsers"]
   # oak9: Define authorized users for the IAM policy
   # oak9: Define authorized users for the IAM policy
+  # oak9: Define authorized users for the IAM policy
 }
 
 resource "google_compute_instance_iam_member" "instance_member" {
