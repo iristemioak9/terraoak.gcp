@@ -30,7 +30,7 @@ resource "google_storage_bucket" "storage-2" {
   location      = "EU"
   force_destroy = true
 
-  uniform_bucket_level_access = false
+  uniform_bucket_level_access = true
 
   encryption {
     default_kms_key_name = google_kms_crypto_key.kms.name
