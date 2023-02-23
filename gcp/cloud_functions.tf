@@ -1,5 +1,6 @@
 
 resource "google_cloudfunctions_function" "function" {
+  # oak9: google_cloudfunctions_function.service_account_email is not configured
   name        = "function-test"
   description = "My function"
   runtime     = "nodejs14"
@@ -23,4 +24,5 @@ resource "google_cloudfunctions_function_iam_member" "invoker" {
 
   role   = "roles/cloudfunctions.invoker"
   member = "allUsers"
+  # oak9: google_cloudfunctions_function_iam_member.member is not configured
 }
