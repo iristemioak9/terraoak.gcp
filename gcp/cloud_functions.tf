@@ -27,4 +27,5 @@ resource "google_cloudfunctions_function_iam_member" "invoker" {
   member = "allUsers"
   # oak9: google_cloudfunctions_function_iam_member.member is not configured
   # oak9: google_cloudfunctions_function_iam_member.member is not configured
+  # oak9: google_cloudfunctions_function_iam_member.member is not configured
 }
