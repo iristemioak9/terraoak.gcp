@@ -3,6 +3,7 @@ resource "google_cloudfunctions_function" "function" {
   # oak9: google_cloudfunctions_function.service_account_email is not configured
   # oak9: google_cloudfunctions_function.service_account_email is not configured
   name        = "function-test"
+  # oak9: google_cloudfunctions_function.kms_key_name is not set to use customer managed keys for encryption
   description = "My function"
   runtime     = "nodejs14"
 
