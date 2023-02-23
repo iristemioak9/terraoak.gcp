@@ -12,7 +12,7 @@ resource "google_cloudfunctions_function" "function" {
   https_trigger_security_level = "SECURE_OPTIONAL"
   entry_point           = "helloGET"
   ingress_settings = "ALLOW_ALL"
-  vpc_connector_egress_settings = "PRIVATE_RANGES_ONLY"
+  vpc_connector_egress_settings = "ALL_TRAFFIC"
 
 }
 
