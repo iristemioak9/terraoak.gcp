@@ -126,6 +126,7 @@ resource "google_compute_instance_iam_member" "instance_member" {
   member = "allAuthenticatedUsers"
   # oak9: Define authorized users for the IAM policy
   # oak9: Define authorized users for the IAM policy
+  # oak9: Define authorized users for the IAM policy
   role = "roles/compute.networkUser"
 }
 
