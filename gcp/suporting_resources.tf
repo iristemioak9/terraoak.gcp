@@ -1,4 +1,5 @@
 resource "google_kms_crypto_key" "kms" {
+  # oak9: google_kms_crypto_key.rotation_period is not configured to rotate keys periodically
   description             = "KMS key 1"
   deletion_window_in_days = 10
 }
