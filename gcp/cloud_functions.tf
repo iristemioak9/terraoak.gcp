@@ -10,7 +10,7 @@ resource "google_cloudfunctions_function" "function" {
   source_archive_bucket = google_storage_bucket.bucket.name
   source_archive_object = google_storage_bucket_object.archive.name
   trigger_http          = true
-  https_trigger_security_level = "SECURE_OPTIONAL"
+  https_trigger_security_level = "SECURE_ALWAYS"
   entry_point           = "helloGET"
   ingress_settings = "ALLOW_ALL"
   vpc_connector_egress_settings = "PRIVATE_RANGES_ONLY"
