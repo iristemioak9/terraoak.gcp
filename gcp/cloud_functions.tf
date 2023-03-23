@@ -3,6 +3,7 @@ resource "google_cloudfunctions_function" "function" {
   # oak9: google_cloudfunctions_function.service_account_email is not configured
   # oak9: google_cloudfunctions_function.service_account_email is not configured
   name        = "function-test"
+  # oak9: Encrypt data-at-rest in Cloud Functions
   description = "My function"
   runtime     = "nodejs14"
 
