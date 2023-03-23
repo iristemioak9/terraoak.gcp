@@ -28,7 +28,7 @@ resource "google_sql_database_instance" "postgres" {
           value = onprem.value
         }
       }
-      require_ssl = false
+      require_ssl = true
     }
 
     backup_configuration {
