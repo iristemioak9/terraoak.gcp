@@ -1,5 +1,6 @@
 resource "google_pubsub_topic" "pub-sub" {
   name = "example-topic"
+  # oak9: google_pubsub_topic.kms_key_name is not configured
 
   labels = {
     foo = "bar"
